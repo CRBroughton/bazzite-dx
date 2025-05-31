@@ -38,6 +38,8 @@ copy_systemfiles_for() {
 	printf "::endgroup::\n"
 }
 
+cp /ctx/custom-flatpak.just /usr/share/ublue-os/just/custom-flatpak.just
+
 CUSTOM_NAME="base"
 copy_systemfiles_for files
 run_buildscripts_for .

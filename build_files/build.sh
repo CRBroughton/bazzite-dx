@@ -38,7 +38,7 @@ copy_systemfiles_for() {
 	printf "::endgroup::\n"
 }
 
-cp custom-flatpak.just /usr/share/ublue-os/just/custom-flatpak.just
+cp /run/context/build_files/custom-flatpak.just /usr/share/ublue-os/just/custom-flatpak.just
 
 CUSTOM_NAME="base"
 copy_systemfiles_for files

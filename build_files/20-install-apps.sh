@@ -8,23 +8,10 @@ dnf5 install --enable-repo="copr:copr.fedorainfracloud.org:bazzite-org:bazzite" 
     gamescope-session-steam
 
 dnf5 install -y \
-    android-tools \
-    bcc \
-    bpftop \
-    bpftrace \
     flatpak-builder \
-    ccache \
-    nicstat \
-    numactl \
     podman-machine \
     podman-tui \
-    python3-ramalama \
-    qemu-kvm \
-    restic \
-    rclone \
-    sysprof \
-    tiptop \
-    zsh
+    restic 
 
 dnf5 install --enable-repo="copr:copr.fedorainfracloud.org:ublue-os:packages" -y \
     ublue-setup-services

@@ -38,8 +38,6 @@ copy_systemfiles_for() {
 	printf "::endgroup::\n"
 }
 
-cp /run/context/build_files/custom.just /usr/share/ublue-os/just/custom.just
-
 CUSTOM_NAME="base"
 copy_systemfiles_for files
 run_buildscripts_for .

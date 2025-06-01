@@ -11,6 +11,7 @@ dnf5 install -y \
     flatpak-builder \
     podman-machine \
     podman-tui \
+    croc \
     restic 
 
 dnf5 install --enable-repo="copr:copr.fedorainfracloud.org:ublue-os:packages" -y \

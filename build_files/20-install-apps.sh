@@ -12,6 +12,8 @@ dnf5 install -y \
     podman-machine \
     podman-tui \
     croc \
+    kleopatra \
+    yubikey-manager \
     restic 
 
 dnf5 install --enable-repo="copr:copr.fedorainfracloud.org:ublue-os:packages" -y \

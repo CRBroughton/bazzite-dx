@@ -7,4 +7,5 @@ FROM ${BASE_IMAGE}
 RUN --mount=type=tmpfs,dst=/tmp \
  --mount=type=bind,from=ctx,source=/,target=/run/context \
  mkdir -p /var/roothome && \
- /run/context/build_files/build.sh
+ /run/context/build_files/build.sh && \
+ systemctl --global enable custom-flatpaks.service

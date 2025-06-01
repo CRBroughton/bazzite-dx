@@ -15,4 +15,7 @@ flatpak install --system --noninteractive --assumeyes flathub \
     org.qbittorrent.qBittorrent \
     com.spotify.Client
 
+# Create marker file so it only runs once
+touch /var/lib/custom-flatpaks-installed
+
 echo "Custom Flatpaks installed successfully!"

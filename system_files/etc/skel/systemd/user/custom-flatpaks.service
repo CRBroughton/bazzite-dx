@@ -1,0 +1,12 @@
+[Unit]
+Description=Install custom Flatpaks on login
+After=graphical-session.target
+ConditionPathExists=!/var/lib/custom-flatpaks-installed
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/install-custom-flatpaks.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=default.target

@@ -11,7 +11,7 @@ FROM ${BASE_IMAGE}
 RUN --mount=type=tmpfs,dst=/tmp \
  --mount=type=bind,from=ctx,source=/,target=/run/context \
  mkdir -p /var/roothome && \
- /run/context/build_files/build-packages.sh
+ /run/context/build_files/build.sh
 
 # Layer 2: System files (Flatpak lists, configs) - rebuilds when system_files change
 RUN --mount=type=bind,from=ctx,source=/,target=/run/context \

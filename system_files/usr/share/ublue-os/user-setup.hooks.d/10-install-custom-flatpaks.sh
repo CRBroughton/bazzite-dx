@@ -11,6 +11,7 @@ flatpak install --system --noninteractive --assumeyes flathub \
     com.discordapp.Discord \
     md.obsidian.Obsidian \
     com.bitwarden.desktop \
-    org.gnome.World.PikaBackup/x86_64/stable
+    org.gnome.World.PikaBackup/x86_64/stable \
+    org.qbittorrent.qBittorrent
 
 echo "Custom Flatpaks installed successfully!"

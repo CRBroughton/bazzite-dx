@@ -10,7 +10,6 @@ flatpak remote-add --if-not-exists --system flathub https://flathub.org/repo/fla
 flatpak install --system --noninteractive --assumeyes flathub \
     com.discordapp.Discord \
     md.obsidian.Obsidian \
-    org.libreoffice.LibreOffice \
     com.bitwarden.desktop
 
 echo "Custom Flatpaks installed successfully!"

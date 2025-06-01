@@ -12,6 +12,7 @@ flatpak install --system --noninteractive --assumeyes flathub \
     md.obsidian.Obsidian \
     com.bitwarden.desktop \
     org.gnome.World.PikaBackup/x86_64/stable \
-    org.qbittorrent.qBittorrent
+    org.qbittorrent.qBittorrent \
+    com.spotify.Client
 
 echo "Custom Flatpaks installed successfully!"

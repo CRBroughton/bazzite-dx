@@ -11,3 +11,6 @@ RUN --mount=type=tmpfs,dst=/tmp \
  --mount=type=bind,from=ctx,source=/,target=/run/context \
  mkdir -p /var/roothome && \
  /run/context/build_files/build.sh
+
+RUN --mount=type=bind,from=system_ctx,source=/,target=/run/context \
+ cp -av /run/context/files/. /

@@ -13,4 +13,4 @@ RUN --mount=type=tmpfs,dst=/tmp \
  /run/context/build_files/build.sh
 
 RUN --mount=type=bind,from=system_ctx,source=/,target=/run/context \
- cp -av /run/context/files/. /
+ rsync -av /run/context/files/ /
